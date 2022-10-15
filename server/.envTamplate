@@ -1,0 +1,13 @@
+# Environment VARIABLES.
+#..................................
+NODE_ENV  = development 
+DEV_PORT  = 5000
+PROD_PORT = 3100
+
+# CACHE
+#..................................
+CACHE_DEFAULT_ALIVE = 1800
+
+# PAGES
+#..................................
+API_CHARACTER_ADDRESS="https://rickandmortyapi.com/api/character/"
