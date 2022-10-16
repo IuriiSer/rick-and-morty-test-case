@@ -4,7 +4,7 @@ const Schema = gql`
 		name: String
 		url: String
 	}
-	
+
 	type Location {
 		name: String
 		url: String
