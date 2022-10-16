@@ -15,8 +15,8 @@ class CharacterService {
 	 * @param page -> pagination for characters
 	 * @returns Character[]
 	 */
-	public getCharactersByPage: GetCharacters = async (page: number) => {
-		if (!page) return [];
+	public getCharactersByPage: GetCharacters = async (_page: number) => {
+		const page = _page || 1;
 		// searchRes is needed when RedisInterface throw errors and returns null value;
 		let searchRes = null;
 		// isReqSended allows to understand did getCharactersByPageHandler worked without errors
