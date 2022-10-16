@@ -13,8 +13,7 @@ import { IExecutableSchemaDefinition } from '@graphql-tools/schema';
 
 import { Schemas, Resolvers } from './graphql';
 
-const { DEV_PORT, PROD_PORT, NODE_ENV } = process.env;
-const port = NODE_ENV === 'production' ?  PROD_PORT : DEV_PORT
+const { PORT } = process.env;
 
 async function startApolloServer(
 	schema: DocumentNode[],
@@ -30,9 +29,9 @@ async function startApolloServer(
 	await server.start();
 	server.applyMiddleware({ app });
 	await new Promise<void>(
-		(resolve) => httpServer.listen({ port }, resolve), //run the server on port 4000
+		(resolve) => httpServer.listen({ port: PORT }, resolve), //run the server on port 4000
 	);
-	console.log(`Server ready at http://localhost:${port}${server.graphqlPath}`);
+	console.log(`Server ready at http://localhost:${PORT}${server.graphqlPath}`);
 }
 
 //in the end, run the server and pass in our Schema and Resolver.
