@@ -13,7 +13,7 @@ To get started:
 
 1. Navigate to the `server` folder.
 1. Run `npm install`.
-1. Run `Run `npm run start` to build app and run it or `npm run start:dev` to run with nodemon.
+1. Run `npm run start` to build app and run it or `npm run start:dev` to run with nodemon.
 
 This will start the GraphQL API server.
 
