@@ -1,0 +1,3 @@
+# GRAPHQL URL
+#..................................
+REACT_APP_GRAPHQL_ADDRESS=http://localhost:4000/graphql

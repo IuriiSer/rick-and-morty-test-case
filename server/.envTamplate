@@ -1,0 +1,11 @@
+# Environment VARIABLES.
+#..................................
+PORT = 4000
+
+# CACHE
+#..................................
+CACHE_DEFAULT_ALIVE = 1800
+
+# PAGES
+#..................................
+API_CHARACTER_ADDRESS="https://rickandmortyapi.com/api/character/"
